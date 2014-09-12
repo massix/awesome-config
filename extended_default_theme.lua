@@ -1,4 +1,4 @@
-dofile("/home/mgengarelli/.config/awesome/themes/wabbit/theme.lua")
+dofile(os.getenv("HOME") .. "/.config/awesome/themes/wabbit/theme.lua")
 
 --vain.layout.termfair,
 --vain.layout.browse,
