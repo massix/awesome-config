@@ -1,0 +1,9 @@
+[submodule "vain-git"]
+	path = vain-git
+	url = https://github.com/vain/awesome-vain.git
+[submodule "themes"]
+	path = themes
+	url = https://github.com/mikar/awesome34-themes.git
+[submodule "lain"]
+	path = lain
+	url = https://github.com/copycat-killer/lain.git
