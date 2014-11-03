@@ -82,21 +82,21 @@ layouts =
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 
-      "☢ code", 
-      "⛺ web", 
-      "💌 mail", 
-      "⛄ im", 
-      "💣 hacking", 
-      "⛑ vnc", 
-      "🌵 misc", 
-      "🍕 random", 
-      "📆 aléatoire" 
+    tags[s] = awful.tag({
+      "☢ web",
+      "⛺ emacs",
+      "💌 three",
+      "⛄ four",
+      "💣 five",
+      "⛑ six",
+      "🌵 seven",
+      "🍕 eight",
+      "📆 nine"
     }, s, awful.layout.suit.floating)
 end
 
--- Set centerwork layout for code space
-awful.layout.set(vain.layout.centerwork, tags[1][1])
+-- Set uselesstile.left layout for code space
+awful.layout.set(lain.layout.uselesstile.left, tags[1][1])
 
 -- Set cascade layout for web space
 awful.layout.set(vain.layout.cascade, tags[1][2])
@@ -381,11 +381,13 @@ awful.rules.rules = {
     { rule = { class = "gimp" },
       properties = { floating = true } },
     { rule = { class = "Firefox" },
-      properties = { tag = tags[1][2] } },
+      properties = { tag = tags[1][1] } },
     { rule = { class = "Thunderbird" },
       properties = { tag = tags[1][3] } },
     { rule = { class = "Pidgin" },
       properties = { tag = tags[1][4] } },
+    { rule = { class = "Emacs" },
+      properties = { tag = tags[1][2] } },
     { rule = { class = "Conky" },
       properties = {
           border_width = 0,
