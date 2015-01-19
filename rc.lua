@@ -83,15 +83,15 @@ tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
     tags[s] = awful.tag({
-      "☢ web",
-      "⛺ code",
-      "💌 three",
-      "⛄ four",
-      "💣 five",
-      "⛑ six",
-      "🌵 seven",
-      "🍕 eight",
-      "📆 nine"
+      "☢ α",
+      "⛺ β",
+      "💌 γ",
+      "⛄ δ",
+      "💣 ε",
+      "⛑ ζ",
+      "🌵 η",
+      "🍕 θ",
+      "📆 ι"
     }, s, awful.layout.suit.floating)
 end
 
